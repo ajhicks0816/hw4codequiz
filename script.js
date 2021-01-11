@@ -1,6 +1,7 @@
+//Timer & Variables
 function countdown() {
-    var timeLeft = 300;
-    var
+    var timeLeft = 15;
+
     // TODO: Use the `setInterval()` method to call a function to be executed every 1000 milliseconds
     var timeInterval = setInterval(function () {
 
@@ -8,7 +9,7 @@ function countdown() {
         if (timeLeft === 1) {
             timerEl.innerHTML = (timeLeft--) + " second left";
             console.log("IF == 1");
-        }
+                }
         else if (timeLeft > 0) {
             timerEl.innerHTML = (timeLeft--) + " seconds left";
             console.log("IF > 0");
