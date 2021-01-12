@@ -6,16 +6,20 @@
 
     <!--Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">  
 
     <title>Code Quiz</title>
 </head>
+
 <body>
-    <nav class="navbar navbar=expand-md md-4">
+    <nav class="navbar navbar=expand-md md-6">
+        <nav class="navbar navbar=expand-md md-6">
         <ul class="navbar-nav">
             <li class="nav-item active">
                 <a class="nav-link" href="highscores.html">View Highscores</a>
+                <a class="nav-link" href="">Time:</a>
             </li>
+        </nav>    
         </ul>
     </nav>
     <main class="container">
@@ -24,16 +28,17 @@
             <!--Spacing-->
             <div class="col-md-3"></div>
 
-            <!---Main Content-->
-            <div class="cold-md-6">
+            <!---Questions & Buttons-->
+            <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
                         <h5 id="questions" class="card-title">What is HTML known as?
                         </h5>
-                        <button id="answer1" type="button" class="btn btn-primary d-block mb-1">the appearance</button>
-                        <button id="answer2" type="button" class="btn btn-primary d-block mb-1">the brain</button>
-                        <button id="answer3" type="button" class="btn btn-primary d-block mb-1">the body</button>
-                        <button id="answer4" type="button" class="btn btn-primary d-block mb-1">how.the.mind.lives</button>
+                        <button id="answer1" type="button" class="btn btn-primary d-block mb-1">The appearance</button>
+                        <button id="answer2" type="button" class="btn btn-primary d-block mb-1">The brain</button>
+                        <button id="answer3" type="button" class="btn btn-primary d-block mb-1">The body</button>
+                        <button id="answer4" type="button"
+                            class="btn btn-primary d-block mb-1">How.The.Mind.Lives</button>
                     </div>
                 </div>
             </div>
