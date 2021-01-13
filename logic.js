@@ -1,23 +1,14 @@
 //question click function
 //3rd part stop timer, showing end screen, show final score, end screen (picture). create 2 variables
 
-//Variables
-var highscoresEl = document.createElement("highscores");
-var countdownClockEl = document.createElement("timer");
-var htmlEl = document.createElement("div")
-var questionsEl = document.createElement("ol")
-var li1 = document.createElement('li');
-var li2 = document.createElement("li2");
-var li3 = document.createElement("li3");
-var li4 = document.createElement("li4");
+var time = questions.length * 10;
 
-Highscores.textContent = "View Highscores";
-countdownClock.textContent = "Timer:";
-htmlEl.textContent = "What is HTML known as?"
-li1.textContent = "The Appearance";
-li2.textContent = "The Brain";
-li3.textContent = "The Body";
-li4.textContent = "How.The.Mind.Lives";
+//Variables
+var questionsEl = document.createElement("questions");
+var timerEl = document.createElement("time");
+var answers = document.createElement("answers")
+var submitEl = document.createElement("submit")
+var startBtn = document.createElement("start");
 
 //Timer
 function countdown() {
