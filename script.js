@@ -1,3 +1,6 @@
+//question click function
+//3rd part stop timer, showing end screen, show final score, end screen (picture). create 2 variables
+
 //Variables
 var highscoresEl = document.createElement("highscores");
 var countdownClockEl = document.createElement("timer");
