@@ -6,9 +6,16 @@ var time = questions.length * 10;
 //Variables
 var questionsEl = document.createElement("questions");
 var timerEl = document.createElement("time");
-var answers = document.createElement("answers")
+var choices = document.createElement("choices")
 var submitEl = document.createElement("submit")
 var startBtn = document.createElement("start");
+var intialsEl = document.createElement("initials")
+
+
+// Start Quiz
+function startQuiz() {
+    
+}
 
 //Timer
 function countdown() {
@@ -34,9 +41,6 @@ function countdown() {
         }
 
 
-
-    }, 1000);
-}
 
 
 function displayTimer() {
