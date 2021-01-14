@@ -14,7 +14,7 @@ var intialsEl = document.createElement("initials")
 
 // Start Quiz
 function startQuiz() {
-    
+
 }
 
 //Timer
@@ -46,3 +46,6 @@ function countdown() {
 function displayTimer() {
     console.log("Hello")
 }
+
+// Click events
+

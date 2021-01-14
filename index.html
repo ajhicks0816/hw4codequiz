@@ -2,36 +2,43 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Highscores</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Quiz</title>
 
-  <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
 
-  <div class="scores>"><a href="highscores.html">View Highscores</a></div>
+    <div class="scores>"><a href="highscores.html">View Highscores</a></div>
 
-  <div class="timer">Time: <span id="time">0</span></div>
+    <div class="timer">Time: <span id="time">0</span></div>
 
-  <div class="wrapper">
-    <div id="start-screen" class="start">
-      <h1>Coding Quiz Challenge</h1>
-      <p>
-        Try to answer the following code related questions within the time allotted. Keep in mind that incorrect answers
-        will penalize your score/time by ten seconds!
-      </p>
-      <button id="start">Start Quiz</button>
+    <div class="wrapper">
+        <div id="start-screen" class="start">
+            <h1>Coding Quiz Challenge</h1>
+            <p>
+                Try to answer the following code related questions within the time allotted. Keep in mind that incorrect
+                answers
+                will penalize your score/time by ten seconds!
+            </p>
+            <button id="start">Start Quiz</button>
+        </div>
     </div>
-  </div>
 
-<div id="questions" class="hide">
+    <div id="questions" class="hide">
+        <h2 id="question-title"></h2>
+        <div id="choices" class="choices"></div>
+    </div>
 
-</div>
-  <script src="./scores.js"></script>
+    <div id="end-screen" class="hide">
+        <h2>All done!</h2>
+        <p>Your final score is </p>
+    </div>
+    <script src="./scores.js"></script>
 </body>
 
 </html>
