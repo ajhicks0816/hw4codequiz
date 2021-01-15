@@ -32,6 +32,7 @@ var questions = [
 ]
 
 var time = questions.length * 10;
+var timerId;
 
 //Variables
 var questionsEl = document.createElement("questions");
@@ -44,12 +45,28 @@ var intialsEl = document.createElement("initials")
 
 
 // Start Quiz
-var startQuiz = document.getElementById("start");
-startQuiz.addEventListener("click", function () {
+var startScreenEL = document.getElementById("start-screen");
+startScreenEL.setAttribute("class", "hide")
+startScreenEL.addEventListener("click", function () {
     console.log("clicked on the button")
 
-console.log(questions[0].title)
-questionsTitle.textContent = questions[0].title
+// console.log(questions[0].title)
+// questionsTitle.textContent = questions[0].title
+
+questionsEl.removeAttribute("class");
+
+timerId = setInterval(tickTock, 1000);
+
+timerEl.textContent = time;
+
+getQuestions ();
+}
+
+function getQuestion() {
+
+}
+
+
 
 });
 
