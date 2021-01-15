@@ -67,8 +67,7 @@ function getQuestion() {
     }
 
 
-
-});
+);
 
 //Timer
 function countdown() {
