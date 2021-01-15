@@ -50,21 +50,21 @@ startScreenEL.setAttribute("class", "hide")
 startScreenEL.addEventListener("click", function () {
     console.log("clicked on the button")
 
-// console.log(questions[0].title)
-// questionsTitle.textContent = questions[0].title
+    // console.log(questions[0].title)
+    // questionsTitle.textContent = questions[0].title
 
-questionsEl.removeAttribute("class");
+    questionsEl.removeAttribute("class");
 
-timerId = setInterval(tickTock, 1000);
+    timerId = setInterval(tickTock, 1000);
 
-timerEl.textContent = time;
+    timerEl.textContent = time;
 
-getQuestions ();
+    getQuestions();
 }
 
 function getQuestion() {
 
-}
+    }
 
 
 
@@ -76,30 +76,40 @@ function countdown() {
 
     // TODO: Use the `setInterval()` method to call a function to be executed every 1000 milliseconds
     var timeInterval = setInterval(function () {
-
         console.log(timeLeft);
-        if (timeLeft === 1) {
-            timerEl.innerHTML = (timeLeft--) + " second left";
-            console.log("IF == 1");
+        count--;
+        if (count === 0) {
+            stopIntervel()
         }
-        else if (timeLeft > 0) {
-            timerEl.innerHTML = (timeLeft--) + " seconds left";
-            console.log("IF > 0");
-        }
-        else {
-            timerEl.innerHTML = "";
-            clearInterval(timeInterval);
-            console.log("IF ELSE");
-            displayMessage();
-        }
-    });
+    }, 1000);
 
-
-
-
-    function displayTimer() {
-        console.log("Hello")
+    var stopInterval = function() {
+        console.log("time is up!");
+        clearInterval(timer);
     }
+
+    // if (timeLeft === 1) {
+    // timerEl.innerHTML = (timeLeft--) + " second left";
+    // console.log("IF == 1");
+    // }
+    // else if (timeLeft > 0) {
+    // timerEl.innerHTML = (timeLeft--) + " seconds left";
+    // console.log("IF > 0");
+    // }
+    // else {
+    // timerEl.innerHTML = "";
+    // clearInterval(timeInterval);
+    // console.log("IF ELSE");
+    // displayMessage();
+}
+    // });
+
+
+
+
+function displayTimer() {
+    console.log("Hello")
+}
 
     // Click events
 };
