@@ -13,7 +13,13 @@ var intialsEl = document.createElement("initials")
 
 
 // Start Quiz
-function startQuiz() {
+function startQuiz = document.getElementById("start-quiz");
+
+function submitBtn() {
+
+}
+
+}    
 
 }
 
