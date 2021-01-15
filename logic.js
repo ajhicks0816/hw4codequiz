@@ -1,10 +1,41 @@
 //question click function
 //3rd part stop timer, showing end screen, show final score, end screen (picture). create 2 variables
 
+// < !--- Questions & Buttons-- >
+var questions = [
+    {
+        title: "Commonly used date types DO NOT include:",
+        choices: ["string", "booleans", "alerts", "numbers"],
+        answer: "alerts"
+    },
+    {
+        title: "Arrays in JavaScript can be used to store _______.",
+        choices: ["numbers and strings", "other arrays", "booleans", "all of the above"],
+        answer: "all of the above"
+    },
+    {
+        title: "String values must be enclosed within ________ when being assigned to variables.",
+        choices: ["commas", "curly brackets", "quotes", "parentheses"],
+        answer: "quotes"
+    },
+    {
+        title: "Who invented JavaScript?",
+        choices: ["James Gosling", "Brendan Eich", "John Resig", "Winifred Mitchell Baker"],
+        answer: "Brendan Eich"
+    },
+    {
+        title: "The condition in a if/else statement is enclosed within ________.",
+        choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
+        answer: "parentheses"
+    }
+
+]
+
 var time = questions.length * 10;
 
 //Variables
 var questionsEl = document.createElement("questions");
+var questionsTitle = document.getElementById("question-title");
 var timerEl = document.createElement("time");
 var choices = document.createElement("choices")
 var submitEl = document.createElement("submit")
@@ -13,15 +44,14 @@ var intialsEl = document.createElement("initials")
 
 
 // Start Quiz
-function startQuiz = document.getElementById("start-quiz");
+var startQuiz = document.getElementById("start");
+startQuiz.addEventListener("click", function () {
+    console.log("clicked on the button")
 
-function submitBtn() {
+console.log(questions[0].title)
+questionsTitle.textContent = questions[0].title
 
-}
-
-}    
-
-}
+});
 
 //Timer
 function countdown() {
@@ -34,7 +64,7 @@ function countdown() {
         if (timeLeft === 1) {
             timerEl.innerHTML = (timeLeft--) + " second left";
             console.log("IF == 1");
-                }
+        }
         else if (timeLeft > 0) {
             timerEl.innerHTML = (timeLeft--) + " seconds left";
             console.log("IF > 0");
@@ -45,13 +75,14 @@ function countdown() {
             console.log("IF ELSE");
             displayMessage();
         }
+    });
 
 
 
 
-function displayTimer() {
-    console.log("Hello")
-}
+    function displayTimer() {
+        console.log("Hello")
+    }
 
-// Click events
-
+    // Click events
+};
