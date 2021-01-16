@@ -14,3 +14,7 @@ Focusing on the end result. Getting what I need out of the assignments and conti
 GitHub [https://github.com/ajhicks0816/hw4codequiz]  
 Code Quiz [https://ajhicks0816.github.io/hw4codequiz]
 
+## Images
+! [Coding Quiz Challenge] (./homework1.png)  
+! [Coding Quiz Challenge 2] (./homework2.png)
+
