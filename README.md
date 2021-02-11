@@ -1,4 +1,4 @@
-# hw4codequiz
+# codequiz
 
 ## Purpose
 To develop a code quiz or assessment.
